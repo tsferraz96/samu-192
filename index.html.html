@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal 192</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+    
+<body>
+  <div top-samu>
+    <head>
+        <img class="samu" src="./IMAGENS/SAMU.png" alt="" width="">
+        <img class="prefeitura" src="./IMAGENS/MEDICINA.png" alt="">
+    
+    <H2>PREFEITURA MUNICIPAL DE CIDADE SECRETARIA MUNICIPAL DE SAÚDE GESTÃO DO SISTEMA MUNICIPAL DE SAÚDE</H2>
+      </head>
+    
+  </div>
+
+<h2 class="h1">FICHA DE REGULAÇÃO MÉDICA</h2>
+
+<p>
+    <div id="results"></div>
+
+    <script>
+        const resultsList = document.getElementById('results') 
+        new URLSearchParams(window.location.search).forEach((value, 
+        name) => {
+        resultsList.append(`${name}: ${value}`) 
+        resultsList.append(document.createElement('br'))
+        })
+        </script>
+
+</p>
+
+
+
+<form action="/indexmedico.html" method="get" target="_blank">
+
+    <div class="infor-geral">
+        
+        <table>
+            <div class="dados-paciente">
+
+                <div class="infor-paciente">
+                    <label for="Nome">Nome do Solicitante:</label>
+                    <input type= "name" name="Nome">
+                </div>
+            
+                    
+                <div class="infor-paciente">
+                    <label for="Telefone">Telefone de Contato:</label>
+                    <input type= "name" name="Telefone">
+                </div>
+                
+                <div class="infor-paciente">
+                    <label for="Nome do Paciente">Nome do Paciente:</label>
+                    <input type= "name" name="Nome do Paciente">
+                </div>
+                
+                <div class="infor-paciente">
+                    <label for="Idade">Idade:</label>
+                    <input type= "name" name="Idade" min="0,1" max="110">
+                </div>
+            </div>
+
+            <div class="endereco">
+                <div class="infor-paciente-dados">
+                    <label for="Endereco">Endereço:</label>
+                    <input type= "name" name="Endereco">
+                </div>
+        
+                <div class="infor-paciente-dados">
+                    <label for="Bairro">Bairro:</label>
+                    <input type= "name" name="Bairro">
+                </div>
+        
+                <div class="infor-paciente-dados">
+                    <label for="Cidade">Cidade:</label>
+                    <input type= "name" name="Cidade">
+                </div>
+            </div>
+
+            <div class="quadro">
+                <div class="infor-paciente">
+                    <label for="Quadro Clínico">Quadro Clínico:</label>
+                    <input class="texto" type= "name" name="Quadro Clínico">
+                </div>
+        
+            </div>
+        </table>
+        
+    </div>
+    
+      
+    </form>
+    <button onclick="window.print()">Imprimir</button>
+    
+</body>
+</html>

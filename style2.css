@@ -1,0 +1,90 @@
+body{
+    font-size: 20px;
+    margin: ;
+    padding: 0;
+    
+}
+.samu{
+    width: 200;
+    height: 150;
+    align: left;
+}
+
+
+
+h2{
+
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    border: solid;
+    padding: 50px 20PX;
+         
+}
+.prefeitura{
+    width: 200;
+    height: 150;
+    float: right;
+    }
+
+.h1{
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    padding: 10px;
+   
+}
+
+label{
+    border: solid;
+    background-color: gray;
+    color: black;
+    padding: 5px;
+        
+}
+
+
+.infor-geral{
+    height: auto;
+    border: solid;
+    padding: 20px 20px 50px 20px;
+   border: solid;
+   /* background-color: red; */
+}
+.dados-paciente{
+    float: left;
+}
+.infor-paciente{
+    
+    padding: 5px;
+    height: 50px;
+    
+}
+
+/* .endereco{
+    float: right;
+} */
+.infor-paciente-dados{
+    padding: 5px;
+    height: 50px;
+    float: center;
+
+}
+.texto{
+    word-break: break-all;
+    margin: auto;
+    width: 700px;
+   padding: 10px;
+    text-align: left;
+}
+
+.footer{
+    padding: 10px;
+    /* background-color: blue; */
+}
+/* .ir{
+    background-color: green;
+}
+.voltar{
+    background-color: yellow;
+} */
